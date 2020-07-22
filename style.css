@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #1ddced;
+}
+.chat_box{
+    width: 500px;
+    min-width: 390px;
+    height: 600px;
+    background: #fff;
+    padding: 25px;
+    margin: 20px auto;
+}
+.chat_log{
+    padding: 10px;
+    width: 100%;
+    height: 450px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.chat_log::-webkit-scrollbar{
+    width: 10px;
+}
+.chat_log::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: rgb(0,0,0,0.1);
+}
+.chat{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+.chat_log img{
+    height: 60x;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.chat p{
+    width: 80%;
+    padding: 15px;
+    margin: 5px 1px 0;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+.friend p{
+ background: #1adda4;
+}
+.self p{
+ background: #1ddced;
+ order: -1;
+}
+
+
+.chat_from{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.chat_from input{
+    height: 50px;
+    width: 250px;
+    margin-left: 20px;
+    border-color: #A6C7FF;
+}
+.chat_from button{
+    height: 50px;
+    width: 80px;
+    background: #1ddced;
+    font-size: 25px;
+    border: none;
+    margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+}
